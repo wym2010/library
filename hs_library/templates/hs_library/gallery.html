@@ -1,0 +1,109 @@
+{% extends "Bookmanage/base.html" %}
+{% load static %}
+{% block title %}<title>Fortune Estates a Mobile App Flat Bootstrap Responsive Website Template | Gallery :: 小贝壳网站模板</title>{% endblock %}
+{% block stylesheet %}<link rel="stylesheet" href="{% static 'Bookmanage/css/lightbox.css' %}">{% endblock %}
+{% block icon-list %}
+<ul class="icon-list">
+	<li class="menu-title">Fortune Estates</li>
+	<li><a href="main.html"><i class="glyphicon glyphicon-home"></i> Home </a></li>
+	<li><a href="about.html"><i class="glyphicon glyphicon-info-sign"></i> About </a></li>
+	<li><a href="property.html"><i class="glyphicon glyphicon-briefcase"></i> properties </a></li>
+	<li><a href="agents.html"><i class="glyphicon glyphicon-eye-open"></i> Agents </a></li>
+	<li><a class="active" href="gallery.html"><i class="glyphicon glyphicon-picture"></i> Gallery</a></li>
+	<li><a href="#" class="menu"><i class="glyphicon glyphicon-duplicate"></i> pages<span class="glyphicon glyphicon-menu-down"></span></a>
+		<ul class="nav-sub">
+			<li><a href="#small-dialog" class="sign-in popup-top-anim"><i class="glyphicon glyphicon-user"></i> login</a></li>
+			<li><a href="#small-dialog1" class="sign-in popup-top-anim"><i class="glyphicon glyphicon-edit"></i> Sign Up</a></li>
+			<li><a href="codes.html"><i class="glyphicon glyphicon-list-alt"></i> Short Codes</a></li>
+		</ul>
+		<div class="clearfix"> </div>
+		<script>
+			$( "li a.menu" ).click(function() {
+			$( "ul.nav-sub" ).slideToggle( 300, function() {
+			// Animation complete.
+			});
+			});
+		</script>
+	</li>
+	<li><a href="contact.html"><i class="glyphicon glyphicon-envelope"></i> Contact </a></li>
+</ul>{% endblock %}
+{% block property %}
+<!-- banner -->
+<div class="banner about-banner">
+	<div class="banner-img">
+		<h3>Gallery</h3>
+	</div>
+</div>
+<!-- //banner -->
+<!-- gallery -->
+<div class="w3agile gallery">
+	<h3 class="w3ls-title">Our Gallery</h3>
+	<div class="gallery-row">
+		<div class="gallery-grids">
+			<div class="w3ls-hover">
+				<a href="{% static 'Bookmanage/images/g1.jpg' %}" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley">
+					<img src="{% static 'Bookmanage/images/g1.jpg' %}" class="img-responsive zoom-img" alt=""/>
+					<div class="view-caption">
+						<h5>View+</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="gallery-grids">
+			<div class="w3ls-hover">
+				<a href="{% static 'Bookmanage/images/g2.jpg' %}" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley">
+					<img src="{% static 'Bookmanage/images/g2.jpg' %}" class="img-responsive zoom-img" alt=""/>
+					<div class="view-caption">
+						<h5>View+</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="gallery-grids">
+			<div class="w3ls-hover">
+				<a href="{% static 'Bookmanage/images/g3.jpg' %}" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley">
+					<img src="{% static 'Bookmanage/images/g3.jpg' %}" class="img-responsive zoom-img" alt=""/>
+					<div class="view-caption">
+						<h5>View+</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="gallery-grids">
+			<div class="w3ls-hover">
+				<a href="{% static 'Bookmanage/images/g4.jpg' %}" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley">
+					<img src="{% static 'Bookmanage/images/g4.jpg' %}" class="img-responsive zoom-img" alt=""/>
+					<div class="view-caption">
+						<h5>View+</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="gallery-grids">
+			<div class="w3ls-hover">
+				<a href="{% static 'Bookmanage/images/g5.jpg' %}" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley">
+					<img src="{% static 'Bookmanage/images/g5.jpg' %}" class="img-responsive zoom-img" alt=""/>
+					<div class="view-caption">
+						<h5>View+</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="gallery-grids">
+			<div class="w3ls-hover">
+				<a href="{% static 'Bookmanage/images/g6.jpg' %}" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley">
+					<img src="{% static 'Bookmanage/images/g6.jpg' %}" class="img-responsive zoom-img" alt=""/>
+					<div class="view-caption">
+						<h5>View+</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!--  light box js -->
+	<script src="{% static 'Bookmanage/js/lightbox-plus-jquery.min.js' %}"> </script>
+	<!-- //light box js-->
+</div>
+<!-- //gallery -->
+{% endblock %}

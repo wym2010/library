@@ -1,0 +1,4 @@
+FORMAT_XML = 'XML'
+FORMAT_JSON = 'JSON'
+CALL_TYPE_OAPI = 'oapi'
+CALL_TYPE_TOP = 'top'
